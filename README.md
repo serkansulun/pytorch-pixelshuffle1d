@@ -1,4 +1,4 @@
-# pytorch-pixelshuffle1d
+# pytorch pixel shuffle 1d
 
 1D version of Pytorch's PixelShuffle module.
 
