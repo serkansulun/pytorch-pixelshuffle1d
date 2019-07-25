@@ -5,7 +5,8 @@ import torch.nn.functional as F
 from pixelshuffle1d import PixelShuffle1D, PixelUnshuffle1D
 
 def conv1d_same(in_channels, out_channels, kernel_size, bias=True, dilation=1):
-    # Convolution which does not change input size
+    # 1D Convolution which does not change input size
+    # "same" padding
     return torch.nn.Conv1d(in_channels, out_channels, kernel_size, 
                             padding=(kernel_size-1)//2, bias=bias, dilation=dilation)
 
